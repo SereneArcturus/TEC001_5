@@ -1,17 +1,13 @@
-def check_hex(color):
-    if len(color) != 7:
-        return False
-    if color[0] != "#":
-        return False
+def color_checker(color):
+
+    if len(color) == 7 and color[0] == "#":
+        for c in color[1:]:
+            if c not in "0123456789abcdefABCDEF":
+                return False
+        return True
     
-    allowed = "0123456789abcdefABCDEF"
-    
-    for c in color[1:]:
-        if c not in allowed:
-            return False
-    
-    return True
+    return False
 
 
-print(check_hex("#FFA500"))
-print(check_hex("#123abz"))
+print(color_checker("#23a1f0"))
+print(color_checker("#123aby"))

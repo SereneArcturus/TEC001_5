@@ -1,16 +1,16 @@
-def check_course(code):
-    if len(code) < 5 or len(code) > 6:
+def the_valid_course_code(code):
+    if len(code) not in (5, 6):
         return False
     
     letters = code[:-3]
     numbers = code[-3:]
-    
-    if letters.isupper() and letters.isalpha() and numbers.isdigit():
-        return True
-    else:
+
+    if not letters.isalpha() or not letters.isupper():
         return False
+    if not numbers.isdigit():
+        return False
+    return True
 
-
-print(check_course("TEC001"))
-print(check_course("AU006"))
-print(check_course("A1001"))
+print(the_valid_course_code("TEC001"))
+print(the_valid_course_code("AU006"))
+print(the_valid_course_code("AB12"))
