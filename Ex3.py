@@ -10,7 +10,6 @@ def sum_numbers(text):
                 total += int(number)
                 number = ""
     
-    # cộng số cuối cùng nếu có
     if number != "":
         total += int(number)
     
