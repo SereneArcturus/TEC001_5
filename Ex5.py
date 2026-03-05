@@ -1,6 +1,6 @@
 import random
 
-n = int(input("Enter number of points: "))
+n = int(input("Type number of points here: "))
 inside = 0
 
 for i in range(n):
