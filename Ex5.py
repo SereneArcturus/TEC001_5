@@ -12,5 +12,3 @@ for i in range(n):
 
 pi = 4 * inside / n
 print(pi)
-
-a

@@ -11,5 +11,3 @@ def color_checker(color):
 
 print(color_checker("#23a1f0"))
 print(color_checker("#123aby"))
-
-a

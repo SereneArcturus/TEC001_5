@@ -14,5 +14,3 @@ def the_valid_course_code(code):
 print(the_valid_course_code("TEC001"))
 print(the_valid_course_code("AU006"))
 print(the_valid_course_code("AB12"))
-
-a

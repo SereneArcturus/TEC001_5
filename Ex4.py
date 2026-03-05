@@ -11,5 +11,3 @@ def hide_phone(text):
 
 text = "You may reach Mr. Atkinson through his office number: +842439999999 during work hours, or his cell phone number: 0987654321,"
 print(hide_phone(text))
-
-a
